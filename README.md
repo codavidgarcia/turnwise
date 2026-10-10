@@ -175,11 +175,11 @@ Turnwise is v0.2: usable daily by its author, young everywhere else.
 
 ## Roadmap
 
-- [ ] English UI (i18n of renderer strings and agent step labels)
-- [ ] Send reasoning effort to models that accept it
-- [ ] macOS and Linux builds
-- [ ] Signed releases
-- [ ] Verify the endpoint table against OpenAI, Anthropic, OpenRouter, Ollama and LM Studio
+- [ ] English UI: i18n of renderer strings and agent step labels ([#1](https://github.com/codavidgarcia/turnwise/issues/1))
+- [ ] Send reasoning effort to models that accept it ([#2](https://github.com/codavidgarcia/turnwise/issues/2))
+- [ ] macOS and Linux builds ([#3](https://github.com/codavidgarcia/turnwise/issues/3))
+- [ ] Verify the endpoint table against OpenAI, Anthropic, OpenRouter, Ollama and LM Studio ([#4](https://github.com/codavidgarcia/turnwise/issues/4), good first issue)
+- [ ] Signed releases ([#5](https://github.com/codavidgarcia/turnwise/issues/5))
 
 Ideas and pull requests are welcome; start with [CONTRIBUTING.md](CONTRIBUTING.md).
 
