@@ -1,0 +1,20 @@
+# Dependencias y salidas de build
+node_modules/
+dist/
+dist-appx/
+
+# Secretos locales: la clave del endpoint vive aquí o cifrada en settings.json de userData
+.env
+.env.*
+!.env.example
+
+# Material de trabajo: capturas regenerables (npm run shots) y briefs internos. Las capturas
+# publicadas viven en docs/; el logo, la tipografía y el contraste que cita el DNA sí se versionan.
+review/shots/
+review/p1-p3-*.md
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+ci-shots/

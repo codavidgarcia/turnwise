@@ -1,0 +1,68 @@
+{
+  "name": "turnwise",
+  "productName": "Turnwise",
+  "version": "0.2.0",
+  "description": "Open-source desktop coding agent: every turn ends with a receipt you can review or undo. Bring any OpenAI- or Anthropic-compatible endpoint.",
+  "license": "MIT",
+  "author": "Juan David García (https://github.com/codavidgarcia)",
+  "homepage": "https://github.com/codavidgarcia/turnwise#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codavidgarcia/turnwise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codavidgarcia/turnwise/issues"
+  },
+  "keywords": [
+    "coding-agent",
+    "ai-agent",
+    "agent-harness",
+    "electron",
+    "desktop-app",
+    "llm",
+    "openai",
+    "anthropic",
+    "mcp",
+    "codex",
+    "developer-tools",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "dist/main/main.mjs",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "selftest": "esbuild scripts/selftest.ts --bundle --platform=node --format=esm --external:electron --external:@vscode/ripgrep --outfile=dist/selftest.mjs && node dist/selftest.mjs",
+    "test:ui": "esbuild scripts/ui-selftest.ts --bundle --platform=node --format=esm --outfile=dist/ui-selftest.mjs && node dist/ui-selftest.mjs",
+    "shots": "npm run build && node scripts/ui-shot.mjs",
+    "icons": "node scripts/build-icons.mjs",
+    "social": "node scripts/render-social.mjs",
+    "e2e:live": "npm run build && node scripts/e2e-live.mjs",
+    "e2e:folder": "npm run build && node scripts/e2e-folder.mjs",
+    "e2e:anthropic": "npm run build && node scripts/e2e-anthropic.mjs",
+    "e2e:key": "npm run build && node scripts/e2e-key.mjs",
+    "livecheck": "esbuild scripts/livecheck.ts --bundle --platform=node --format=esm --external:electron --external:@vscode/ripgrep --outfile=dist/livecheck.mjs && node dist/livecheck.mjs",
+    "start": "npm run build && electron .",
+    "smoke": "npm run build && electron . --smoke-test",
+    "package:appx": "node scripts/package-appx.mjs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/schibsted-grotesk": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@types/node": "^22.10.0",
+    "electron": "^42.3.0",
+    "esbuild": "^0.25.0",
+    "playwright": "^1.64.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@vscode/ripgrep": "^1.18.0",
+    "diff": "^9.0.0",
+    "marked": "^18.1.0",
+    "zod": "^4.6.5"
+  }
+}

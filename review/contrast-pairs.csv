@@ -1,0 +1,38 @@
+claro texto sobre lienzo, #1b2227, #f5f6f7, 4.5
+claro texto sobre superficie, #1b2227, #fbfcfc, 4.5
+claro texto sobre elevado, #1b2227, #e9edf0, 4.5
+claro texto sobre carril, #1b2227, #eef0f2, 4.5
+claro secundario sobre lienzo, #56626b, #f5f6f7, 4.5
+claro secundario sobre elevado, #56626b, #e9edf0, 4.5
+claro secundario sobre carril, #56626b, #eef0f2, 4.5
+claro terciario (gutter) sobre lienzo, #626e77, #f5f6f7, 4.5
+claro acento texto sobre lienzo, #24658c, #f5f6f7, 4.5
+claro acento texto sobre elevado, #24658c, #e9edf0, 4.5
+claro etiqueta sobre acento, #f3f8fb, #24658c, 4.5
+claro anadido sobre superficie, #23693f, #fbfcfc, 4.5
+claro eliminado sobre superficie, #a3352c, #fbfcfc, 4.5
+claro anadido sobre fondo diff, #23693f, #e3f1e8, 4.5
+claro eliminado sobre fondo diff, #a3352c, #f8e7e5, 4.5
+claro texto sobre fondo diff anadido, #1b2227, #e3f1e8, 4.5
+claro aviso sobre fondo aviso, #7a5810, #f4ead3, 4.5
+claro foco no texto, #24658c, #f5f6f7, 3
+claro borde control no texto, #7f8a93, #fbfcfc, 3
+oscuro texto sobre lienzo, #e4e8eb, #13171a, 4.5
+oscuro texto sobre superficie, #e4e8eb, #1a1f23, 4.5
+oscuro texto sobre elevado, #e4e8eb, #22282d, 4.5
+oscuro texto sobre carril, #e4e8eb, #0f1215, 4.5
+oscuro secundario sobre lienzo, #9ba6ae, #13171a, 4.5
+oscuro secundario sobre elevado, #9ba6ae, #22282d, 4.5
+oscuro secundario sobre carril, #9ba6ae, #0f1215, 4.5
+oscuro terciario (gutter) sobre lienzo, #87929a, #13171a, 4.5
+oscuro acento texto sobre lienzo, #86c3e6, #13171a, 4.5
+oscuro acento texto sobre elevado, #86c3e6, #22282d, 4.5
+oscuro etiqueta sobre acento, #0e1d27, #86c3e6, 4.5
+oscuro anadido sobre superficie, #7fcb9c, #1a1f23, 4.5
+oscuro eliminado sobre superficie, #ec8f86, #1a1f23, 4.5
+oscuro anadido sobre fondo diff, #7fcb9c, #1b2e23, 4.5
+oscuro eliminado sobre fondo diff, #ec8f86, #33201e, 4.5
+oscuro texto sobre fondo diff anadido, #e4e8eb, #1b2e23, 4.5
+oscuro aviso sobre fondo aviso, #d8b46a, #352c1b, 4.5
+oscuro foco no texto, #86c3e6, #13171a, 3
+oscuro borde control no texto, #67727a, #1a1f23, 3

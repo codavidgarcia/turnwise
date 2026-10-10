@@ -1,0 +1,27 @@
+name: Bug report
+description: Something in Turnwise doesn't work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you got. Screenshots help.
+    validations:
+      required: true
+  - type: input
+    id: endpoint
+    attributes:
+      label: Endpoint and model
+      description: Protocol (OpenAI or Anthropic), service and model id. Never paste your key.
+      placeholder: Anthropic-compatible · OpenCode Go · claude-haiku-5-5
+  - type: input
+    id: version
+    attributes:
+      label: Turnwise version and Windows version
+      placeholder: 0.2.0 · Windows 11 24H2
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error notes or console output
+      render: text

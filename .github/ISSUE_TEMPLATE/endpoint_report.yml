@@ -1,0 +1,33 @@
+name: Endpoint report
+description: You ran Turnwise against a service; tell us if it worked
+labels: [endpoint]
+title: "Endpoint: <service>"
+body:
+  - type: input
+    id: service
+    attributes:
+      label: Service and base URL
+      placeholder: OpenRouter · https://openrouter.ai/api/v1
+    validations:
+      required: true
+  - type: dropdown
+    id: protocol
+    attributes:
+      label: Protocol
+      options: [OpenAI-compatible, Anthropic-compatible]
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: Output of `npm run e2e:live` (or `e2e:anthropic`), or what happened in the app.
+      render: text
+    validations:
+      required: true

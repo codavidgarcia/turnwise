@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Turnwise — direcciones de marca</title>
+<style>
+  :root { --dark: #13171a; --rail-d: #0f1215; --light: #f5f6f7; --rail-l: #eef0f2; --ink: #e4e8eb; --ink-l: #1b2227;
+          --acc-d: #86c3e6; --acc-l: #24658c; --add-d: #7fcb9c; --del-d: #ec8f86; --add-l: #23693f; --del-l: #a3352c; }
+  body { margin: 0; padding: 40px; background: #dfe3e6; font-family: "Segoe UI Variable Text", "Segoe UI", sans-serif; color: #1b2227; }
+  h1 { font: 600 22px "Segoe UI Variable Display", "Segoe UI"; margin: 0 0 28px; letter-spacing: -0.01em; }
+  .row { display: grid; grid-template-columns: 220px 128px 128px 150px 1fr; gap: 28px; align-items: center;
+         padding: 24px 0; border-top: 1px solid #c5ccd1; }
+  .name { font: 600 18px "Segoe UI Variable Display", "Segoe UI"; }
+  .why { font-size: 13px; color: #56626b; margin-top: 6px; line-height: 1.45; }
+  .tile { width: 128px; height: 128px; border-radius: 28px; display: grid; place-items: center; }
+  .tile svg { width: 72px; height: 72px; }
+  .tile.dark { background: var(--dark); box-shadow: inset 0 1px 0 rgb(228 232 235 / .06); }
+  .tile.light { background: var(--light); box-shadow: inset 0 0 0 1px #d9dee2; }
+  .taskbar { display: flex; gap: 14px; align-items: center; background: #202428; padding: 10px 14px; border-radius: 10px; width: max-content; }
+  .taskbar .t32 { width: 32px; height: 32px; border-radius: 7px; display: grid; place-items: center; background: var(--dark); }
+  .taskbar .t32 svg { width: 20px; height: 20px; }
+  .taskbar .t16 svg { width: 16px; height: 16px; display: block; }
+  .rails { display: grid; gap: 10px; }
+  .rail { display: flex; align-items: center; gap: 8px; padding: 12px 14px; width: 240px; border-radius: 8px; }
+  .rail.d { background: var(--rail-d); color: var(--ink); }
+  .rail.l { background: var(--rail-l); color: var(--ink-l); box-shadow: inset 0 0 0 1px #d9dee2; }
+  .rail svg { width: 16px; height: 16px; flex-shrink: 0; }
+  .word { font: 600 15px "Segoe UI Variable Display", "Segoe UI"; letter-spacing: -0.02em; }
+  .word.big { font-size: 15px; }
+  .caption { font-size: 11px; color: #56626b; margin-top: 6px; }
+</style>
+</head>
+<body>
+<h1>Turnwise · tres direcciones de marca</h1>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <!-- A · Bloques: T de 5 bloques (el diffstat del recibo) -->
+    <symbol id="a" viewBox="0 0 24 24">
+      <rect x="1.5" y="1.5" width="6" height="6" rx="1.3" />
+      <rect x="9" y="1.5" width="6" height="6" rx="1.3" />
+      <rect x="16.5" y="1.5" width="6" height="6" rx="1.3" />
+      <rect x="9" y="9" width="6" height="6" rx="1.3" />
+      <rect x="9" y="16.5" width="6" height="6" rx="1.3" />
+    </symbol>
+    <!-- B · Recibo: barra del pedido + 5 bloques de diffstat -->
+    <symbol id="b" viewBox="0 0 24 24">
+      <rect x="1.2" y="4.5" width="21.6" height="5" rx="2.5" style="fill:var(--bar)" />
+      <rect x="1.2" y="13" width="3.6" height="3.6" rx="0.9" style="fill:var(--add)" />
+      <rect x="5.7" y="13" width="3.6" height="3.6" rx="0.9" style="fill:var(--add)" />
+      <rect x="10.2" y="13" width="3.6" height="3.6" rx="0.9" style="fill:var(--add)" />
+      <rect x="14.7" y="13" width="3.6" height="3.6" rx="0.9" style="fill:var(--add)" />
+      <rect x="19.2" y="13" width="3.6" height="3.6" rx="0.9" style="fill:var(--del)" />
+    </symbol>
+  </defs>
+</svg>
+
+<!-- A -->
+<div class="row">
+  <div><div class="name">A · Bloques</div><div class="why">Una T hecha con los 5 bloques del diffstat: el elemento que solo tiene este producto, en una sola tinta. Es una retícula de cuadrados, así que se lee igual a 16px que a 128px.</div></div>
+  <div class="tile dark"><svg fill="#86c3e6"><use href="#a"/></svg></div>
+  <div class="tile light"><svg fill="#24658c"><use href="#a"/></svg></div>
+  <div><div class="taskbar"><span class="t32"><svg fill="#86c3e6"><use href="#a"/></svg></span><span class="t16"><svg fill="#86c3e6"><use href="#a"/></svg></span></div><div class="caption">barra de tareas 32px · bandeja 16px</div></div>
+  <div class="rails">
+    <div class="rail d"><svg fill="#86c3e6"><use href="#a"/></svg><span class="word">turnwise</span></div>
+    <div class="rail l"><svg fill="#24658c"><use href="#a"/></svg><span class="word">turnwise</span></div>
+  </div>
+</div>
+
+<!-- B -->
+<div class="row">
+  <div><div class="name">B · Recibo</div><div class="why">La cabecera del recibo condensada: la barra del pedido y debajo 4 bloques añadidos y 1 eliminado. Lleva el verde y el rojo del diff, así que es más literal y más ruidosa.</div></div>
+  <div class="tile dark"><svg style="--bar:#e4e8eb;--add:#7fcb9c;--del:#ec8f86"><use href="#b"/></svg></div>
+  <div class="tile light"><svg style="--bar:#1b2227;--add:#23693f;--del:#a3352c"><use href="#b"/></svg></div>
+  <div><div class="taskbar"><span class="t32"><svg style="--bar:#e4e8eb;--add:#7fcb9c;--del:#ec8f86"><use href="#b"/></svg></span><span class="t16"><svg style="--bar:#e4e8eb;--add:#7fcb9c;--del:#ec8f86"><use href="#b"/></svg></span></div><div class="caption">barra de tareas 32px · bandeja 16px</div></div>
+  <div class="rails">
+    <div class="rail d"><svg style="--bar:#e4e8eb;--add:#7fcb9c;--del:#ec8f86"><use href="#b"/></svg><span class="word">turnwise</span></div>
+    <div class="rail l"><svg style="--bar:#1b2227;--add:#23693f;--del:#a3352c"><use href="#b"/></svg><span class="word">turnwise</span></div>
+  </div>
+</div>
+
+<!-- C -->
+<div class="row">
+  <div><div class="name">C · Tipográfica</div><div class="why">Sin símbolo: monograma "tw" y wordmark en Segoe UI Variable Display con el tracking cerrado. Es la más sobria, pero a 16px pierde forma.</div></div>
+  <div class="tile dark"><span style="font:700 64px 'Segoe UI Variable Display','Segoe UI';letter-spacing:-0.06em;color:#86c3e6;margin-top:-8px">tw</span></div>
+  <div class="tile light"><span style="font:700 64px 'Segoe UI Variable Display','Segoe UI';letter-spacing:-0.06em;color:#24658c;margin-top:-8px">tw</span></div>
+  <div><div class="taskbar"><span class="t32"><span style="font:700 17px 'Segoe UI Variable Display';letter-spacing:-0.06em;color:#86c3e6">tw</span></span><span class="t16" style="font:700 10px 'Segoe UI';color:#86c3e6;letter-spacing:-0.06em">tw</span></div><div class="caption">barra de tareas 32px · bandeja 16px</div></div>
+  <div class="rails">
+    <div class="rail d"><span class="word" style="font-size:17px">turnwise</span></div>
+    <div class="rail l"><span class="word" style="font-size:17px">turnwise</span></div>
+  </div>
+</div>
+</body>
+</html>
