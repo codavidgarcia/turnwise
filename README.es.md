@@ -21,7 +21,7 @@
   <img src="docs/screenshots/turn-receipts-light.png" alt="Turnwise: dos turnos de una conversación, cada uno cerrado por un recibo con bloques de diffstat, +57 −8, los ficheros tocados, la duración y las acciones Revisar y Deshacer turno">
 </picture>
 
-Turnwise es la base de un harness de agente de escritorio al estilo de Codex: Electron y TypeScript, unas 4.800 líneas de código sin framework de UI, y una prueba por capa. Haz un fork para construir tu propia app de agente, o úsalo tal cual con los modelos que ya pagas.
+Turnwise es un proyecto de fin de semana: un agente de código de escritorio completo que se lee en una tarde. Electron y TypeScript, unas 4.800 líneas de código, sin framework de UI y con una prueba por capa. Léelo para ver cómo encajan el streaming, las llamadas a herramientas, los permisos y el deshacer; haz un fork para construir tu propia app de agente, o úsalo tal cual con los modelos que ya pagas.
 
 ## Por qué turnos
 
@@ -96,7 +96,7 @@ Las variables de entorno, la arquitectura y la batería de pruebas están en el 
 
 ## Estado y límites
 
-Turnwise está en la v0.2: su autor lo usa a diario, pero es joven en todo lo demás.
+Turnwise es un proyecto de fin de semana en su v0.2 y una implementación de referencia, no un producto. Funciona de punta a punta y tiene pruebas, pero tiene aristas:
 
 - **Interfaz solo en español.** Lo primero del roadmap es la versión en inglés.
 - **Windows primero.** La barra de título, el MSIX y Windows Sandbox son de Windows. macOS y Linux no se han probado nunca.

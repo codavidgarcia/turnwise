@@ -22,7 +22,7 @@
   <img src="docs/screenshots/turn-receipts-light.png" alt="Turnwise: two turns in a conversation, each closed by a receipt with diffstat blocks, +57 −8, the files touched, the duration, and Review / Undo turn actions">
 </picture>
 
-Turnwise is a baseline harness for a Codex-style desktop agent: Electron and TypeScript, about 4,800 lines of source with no UI framework, and a test for each layer. Fork it to build your own agent app, or use it as it is against the models you already pay for.
+Turnwise is a weekend project: a complete desktop coding agent you can read in an afternoon. Electron and TypeScript, about 4,800 lines of source, no UI framework, and a test for each layer. Read it to see how streaming, tool calls, permissions and undo fit together, fork it to build your own agent app, or run it against the models you already pay for.
 
 > [!NOTE]
 > The interface is in **Spanish** today (that's who it was built for). English UI is the first item on the [roadmap](#roadmap) and a good first contribution.
@@ -166,7 +166,7 @@ See [SECURITY.md](SECURITY.md) to report a vulnerability.
 
 ## Status and limitations
 
-Turnwise is v0.2: usable daily by its author, young everywhere else.
+Turnwise is a v0.2 weekend project and a reference implementation, not a product. It works end to end and has tests, but expect rough edges:
 
 - **UI in Spanish only.** English i18n is planned first.
 - **Windows first.** The title bar, MSIX and Windows Sandbox are Windows features. macOS and Linux have never been tested.

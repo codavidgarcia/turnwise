@@ -1,18 +1,18 @@
 # Turnwise — DNA v2 · "Bitácora"
 
-Estado: v2 (2026-10-10). Sustituye al v1 "chat con inspector", que el usuario juzgó demasiado básico frente a Claricord y Claude Code. Pendiente de ratificar: la firma (recibo del turno) y la paleta grafito.
+Estado: v2 (2026-10-10). Sustituye al v1 "chat con inspector", que el usuario juzgó demasiado básico frente a Claude Code desktop. Pendiente de ratificar: la firma (recibo del turno) y la paleta grafito.
 
 ## 0. Mundo y tarea
 Un agente trabaja sobre un proyecto mientras el usuario supervisa. El objeto principal no es el mensaje, sino el **turno**: un pedido, los pasos que dio el agente y el resultado en ficheros. El usuario hace tres cosas: pedir, vigilar y revisar o deshacer. La UI es un registro de trabajo legible, no un chat.
 
-## 1. Referencias (evidencia del 2026-10-10: capturas del usuario de Claricord y Claude Code desktop)
-- Claricord: transcript como registro numerado de pasos de una línea, con duración alineada a la derecha y grupos plegables ("Edited the code · 1 edit · 1 command"). **Se toma** la densidad de fila y el canal de números.
+## 1. Referencias (evidencia del 2026-10-10: capturas del usuario de Claude Code desktop)
+- Densidad de herramienta: pasos de una línea con la duración alineada a la derecha, agrupados en bloques plegables, y el canal de números (§3).
 - Claude Code desktop: composer como objeto único con chips (permisos, modelo) dentro; franja de rama y diffstat `+N −M` anclada sobre el composer; sidebar por fechas. **Se toma** la anatomía del composer y la franja de contexto.
 - Suelo vigente: cromo que se retira, superficies neutras grafito, una sola tinta de acento, tipografía ajustada y propia. **Moda saturada que se evita**: burbujas de chat (el usuario juzgó la burbuja gris "ChatGPT de hace unos años"), degradados, sparkle de "IA".
 - Desviación propia: el **recibo del turno** (§3). Ninguna de las referencias cierra cada turno con su resultado en ficheros.
 
 ## 2. Macroestructura
-Hay tres zonas. Carril de proyectos (izq.) · Bitácora (centro, columna de lectura de 48rem) · Revisión (der., bajo demanda: Diff / Plan / Fuentes). El usuario confirmó el 2026-10-10 la columna centrada con la revisión a demanda: comparado con Claricord y Claude Code, lo que envejecía la app eran las tarjetas y el cromo, no el centrado.
+Hay tres zonas. Carril de proyectos (izq.) · Bitácora (centro, columna de lectura de 48rem) · Revisión (der., bajo demanda: Diff / Plan / Fuentes). El usuario confirmó el 2026-10-10 la columna centrada con la revisión a demanda: comparado con Claude Code desktop, lo que envejecía la app eran las tarjetas y el cromo, no el centrado.
 Barra de la app propia: la barra nativa de Windows se oculta (`titleBarStyle: 'hidden'`) y sus controles se superponen a la cabecera más a la derecha, que les reserva el hueco con `env(titlebar-area-*)` y toma su color del tema. Las cabeceras son zonas de arrastre; sus controles, no. El smoke falla si los controles solapan la barra.
 Alternativas descartadas: (a) diff como lienzo central, porque la mayoría de los turnos son de lectura y no producen cambios; (b) consola a pantalla completa, porque pierde la revisión lado a lado.
 Responsive: ≤1180px la revisión pasa a capa sobre la bitácora; ≤820px el carril pasa a capa con botón propio.
